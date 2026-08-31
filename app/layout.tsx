@@ -3,6 +3,10 @@ import { Inter, Space_Mono } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import { Toaster } from "@/components/ui/sonner";
+import { Header } from "@/components/layout/Header";
+import { Marquee } from "@/components/layout/Marquee";
+import { CartDrawer } from "@/components/layout/CartDrawer";
+import { Footer } from "@/components/layout/Footer";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -32,7 +36,13 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-bg-primary text-text-primary">
         <CartProvider>
-          {children}
+          <Header />
+          <Marquee />
+          <div className="flex-1 flex flex-col">
+            {children}
+          </div>
+          <CartDrawer />
+          <Footer />
           <Toaster
             theme="dark"
             position="top-right"
