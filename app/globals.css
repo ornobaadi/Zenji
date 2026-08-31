@@ -1,0 +1,114 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-elevated-2: var(--bg-elevated-2);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  
+  --color-accent-flame: var(--accent-flame);
+  --color-accent-danger: var(--accent-danger);
+  --color-accent-warn: var(--accent-warn);
+  --color-success: var(--success);
+  
+  --font-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+  --font-display: var(--font-display), "Archivo Black", "Bebas Neue", sans-serif;
+}
+
+:root {
+  /* ZENJI Core Design Tokens */
+  --bg-primary: #0a0a0a;
+  --bg-elevated: #121212;
+  --bg-elevated-2: #1a1a1a;
+  --border-subtle: #2a2a2a;
+  --border-strong: #3d3d3d;
+
+  --text-primary: #f5f5f2;
+  --text-secondary: #a3a3a3;
+  --text-tertiary: #6b6b6b;
+
+  --accent-flame: #3b7ce0;
+  --accent-danger: #e0333b;
+  --accent-warn: #e0a83b;
+  --success: #34d17a;
+  --overlay-scrim: rgba(0, 0, 0, 0.7);
+
+  /* shadcn UI tokens mapped to ZENJI dark palette */
+  --background: #0a0a0a;
+  --foreground: #f5f5f2;
+  --card: #121212;
+  --card-foreground: #f5f5f2;
+  --popover: #121212;
+  --popover-foreground: #f5f5f2;
+  --primary: #f5f5f2;
+  --primary-foreground: #0a0a0a;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #f5f5f2;
+  --muted: #1a1a1a;
+  --muted-foreground: #a3a3a3;
+  --accent: #1a1a1a;
+  --accent-foreground: #f5f5f2;
+  --destructive: #e0333b;
+  --destructive-foreground: #f5f5f2;
+  --border: #2a2a2a;
+  --input: #2a2a2a;
+  --ring: #3b7ce0;
+  --radius: 0.25rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar for cyber aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3d3d;
+}
+
+/* System tracking / monospace typography helpers */
+.font-system {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.font-display-zenji {
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+}

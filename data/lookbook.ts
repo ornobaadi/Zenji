@@ -1,0 +1,68 @@
+import { LookbookEntry } from "@/types";
+
+export const LOOKBOOK_ENTRIES: LookbookEntry[] = [
+  {
+    id: "lb-01",
+    productSlug: "blue-flame-vintage-tee",
+    productName: "BLUE FLAME VINTAGE TEE",
+    view: "FRONT",
+    image: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1000&q=80",
+    tag: "NEW_ARRIVAL",
+  },
+  {
+    id: "lb-02",
+    productSlug: "blue-flame-vintage-tee",
+    productName: "BLUE FLAME VINTAGE TEE",
+    view: "BACK",
+    image: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1000&q=80",
+    tag: "NEW_ARRIVAL",
+  },
+  {
+    id: "lb-03",
+    productSlug: "cyber-ronin-oversized-hoodie",
+    productName: "CYBER RONIN HOODIE",
+    view: "ON_MODEL",
+    image: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=1000&q=80",
+    tag: "LIMITED",
+  },
+  {
+    id: "lb-04",
+    productSlug: "oni-spirit-acid-wash-tee",
+    productName: "ONI SPIRIT ACID WASH",
+    view: "FRONT",
+    image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=80",
+    tag: "SEASON_01",
+  },
+  {
+    id: "lb-05",
+    productSlug: "oni-spirit-acid-wash-tee",
+    productName: "ONI SPIRIT ACID WASH",
+    view: "BACK",
+    image: "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1000&q=80",
+    tag: "SEASON_01",
+  },
+  {
+    id: "lb-06",
+    productSlug: "void-walker-tactical-vest",
+    productName: "VOID WALKER VEST",
+    view: "ON_MODEL",
+    image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1000&q=80",
+    tag: "LIMITED",
+  },
+  {
+    id: "lb-07",
+    productSlug: "neo-tokyo-distressed-sweater",
+    productName: "NEO TOKYO SWEATER",
+    view: "FRONT",
+    image: "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=1000&q=80",
+    tag: "NEW_ARRIVAL",
+  },
+  {
+    id: "lb-08",
+    productSlug: "shadow-blade-cargo-pants",
+    productName: "SHADOW BLADE CARGOS",
+    view: "ON_MODEL",
+    image: "https://images.unsplash.com/photo-1517445312882-bc9910d016b7?auto=format&fit=crop&w=1000&q=80",
+    tag: "SEASON_01",
+  },
+];
